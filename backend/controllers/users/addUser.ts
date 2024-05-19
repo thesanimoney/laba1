@@ -1,5 +1,5 @@
 import {Request, Response} from "express";
-import User from "../schema/userSchema";
+import User from "../../schema/db/userSchemaMongoDB";
 
 async function AddUser(req: Request, res: Response) {
     const user = new User({

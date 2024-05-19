@@ -1,4 +1,4 @@
-import validateBook from "../schema/validateBook";
+import validateBook from "../../schema/book/validateBook";
 import {Request, Response} from "express";
 import {Connection} from "mysql2";
 

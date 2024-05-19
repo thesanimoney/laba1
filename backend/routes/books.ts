@@ -1,7 +1,7 @@
 import express from "express";
-import getAllBooks from "../controllers/getAllBooks";
+import getAllBooks from "../controllers/books/getAllBooks";
 import connectToDB from "../services/dbConnection";
-import addBook from "../controllers/addBook";
+import addBook from "../controllers/books/addBook";
 
 const router = express.Router();
 const db = connectToDB()

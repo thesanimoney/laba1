@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const UserSchema = () => {
+const UserSchemaMongoDB = () => {
     const userSchema = new mongoose.Schema({
         name: {type: String, required: true},
         age: {type: Number, required: true},
@@ -8,6 +8,6 @@ const UserSchema = () => {
     return mongoose.model('user', userSchema)
 };
 
-const User = UserSchema()
+const User = UserSchemaMongoDB()
 
 export default User;

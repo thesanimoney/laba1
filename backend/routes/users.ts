@@ -1,7 +1,8 @@
 import express from "express";
-import getUsers from "../controllers/getUsers";
-import addUser from "../controllers/addUser";
-import deleteUser from "../controllers/deleteUsers";
+import getUsers from "../controllers/users/getUsers";
+import addUser from "../controllers/users/addUser";
+import deleteUser from "../controllers/users/deleteUsers";
+import updateUser from "../controllers/users/updateUser";
 
 export const userRouter = express.Router();
 
@@ -15,4 +16,8 @@ userRouter.post("/api/user", async (req, res) => {
 
 userRouter.delete("/api/user/:id", async (req, res) => {
    return deleteUser(req, res);
+})
+
+userRouter.put("/api/user/:id", async (req, res) => {
+   return updateUser(req, res);
 })

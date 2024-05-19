@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import User from "../schema/userSchema";
+import User from "../../schema/db/userSchemaMongoDB";
 
 const deleteUser = async (req: Request, res: Response) => {
     const id = req.params.id

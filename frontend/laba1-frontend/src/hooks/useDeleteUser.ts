@@ -5,7 +5,7 @@ import {queryClient} from "../main.tsx";
 function UseDeleteUser() {
    return useMutation({
        mutationKey: ['user'],
-       mutationFn: (id: number) => apiClient.delete('/user/' + id).then(res => res.data).catch(err => err),
+       mutationFn: (id: string) => apiClient.delete('/user/' + id).then(res => res.data).catch(err => err),
        onSuccess: () => queryClient.invalidateQueries({queryKey: ['users']}),
        onError: (error) => error.message
    })

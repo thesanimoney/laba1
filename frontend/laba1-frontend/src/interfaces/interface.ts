@@ -10,5 +10,5 @@ export interface Book {
 export interface User {
     name: string
     age: number
-    _id?: number
+    _id?: string
 }
