@@ -38,8 +38,8 @@ function UserTable() {
                 <td>{user.name}</td>
                 <td>{user.age}</td>
                 <td className={'w-50'}><div className="">
-                    <div onClick={() => onDelete(user._id!)} className="btn btn-danger me-3">Delete</div>
-                    <div className="btn btn-secondary">Update</div>
+                    <div className="btn btn-secondary me-3">Update</div>
+                    <div onClick={() => onDelete(user._id!)} className="btn btn-outline-danger ">Delete</div>
                 </div></td>
             </tr>)}
             </tbody>
