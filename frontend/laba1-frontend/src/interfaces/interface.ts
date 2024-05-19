@@ -6,3 +6,9 @@ export interface Book {
     price_to_rent: number;
     genre: string;
 }
+
+export interface User {
+    name: string
+    age: number
+    _id?: number
+}

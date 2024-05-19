@@ -2,7 +2,6 @@ import express from "express";
 import getAllBooks from "../controllers/getAllBooks";
 import connectToDB from "../services/dbConnection";
 import addBook from "../controllers/addBook";
-import {QueryResult} from "mysql2";
 
 const router = express.Router();
 const db = connectToDB()
